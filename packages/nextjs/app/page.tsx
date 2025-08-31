@@ -12,13 +12,46 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className="flex items-center flex-col grow pt-10">
-        <div className="px-5">
-          <h1 className="text-center">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">My first dapp on Monad</span>
-            <span className="block text-4xl font-bold">GMonad</span>
-          </h1>
+      <div className="grid grid-cols-12 gap-row-8 mx-5 my-5">
+        <div className="col-span-6"> wallet connection status </div>
+        <div className="col-span-6"> network </div>
+        <div className="col-span-6">
+          <input
+            type="text"
+            placeholder="Not connected"
+            className="input input-error rounded-md w-fullw-full"
+            disabled
+          />{" "}
+        </div>
+        <div className="col-span-6">
+          {" "}
+          <input type="text" placeholder="no network" className="input input-error rounded-md w-full" disabled />
+        </div>
+        <div className="col-span-6">
+          {" "}
+          xxx.nad{" "}
+          <input type="text" placeholder="address" className="input input-error rounded-md w-full" disabled />{" "}
+        </div>
+        <div className="col-span-6">
+          {" "}
+          monad name service{" "}
+          <input type="text" placeholder="mns" className="input input-error rounded-md w-full" disabled />{" "}
+        </div>
+        <div className="col-span-6">
+          {" "}
+          Wallet balance{" "}
+          <input type="text" placeholder="0 Mon" className="input 1input-error rounded-md w-full" disabled />{" "}
+        </div>
+
+        <div className="col-span-6">
+          {" "}
+          wallet nft count{" "}
+          <input type="text" placeholder="0" className="input input-error rounded-md w-full" disabled />
+        </div>
+        <div className="col-span-6">
+          {" "}
+          Add Monad Network{" "}
+          <input type="text" placeholder="network" className="input input-error rounded-md w-full" disabled />
         </div>
       </div>
     </>
